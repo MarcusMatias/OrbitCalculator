@@ -1,0 +1,198 @@
+body, header, main, section, div, a, img{
+    flex-wrap:wrap;
+    color: white;
+    /*max-width: 1368px;*/
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: linear-gradient(#031227 20%,#234585 70%,#9fd1f3 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+    margin: auto auto 0 15px;
+    opacity: 0.5;
+}
+
+#titulopagina{
+    /*#region Position*/
+    display: flex;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    /*#endregion Position*/
+    color: rgba(159, 209, 243, 0.5);
+    /*background: rgba(159, 209, 243, 0.5);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+
+#container{
+    padding: 20px;
+    width: 350px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 6px solid rgba(159, 209, 243, 0.1);
+    border-radius: 15px;
+}
+
+#display{
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 6px 6px 4px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    font-family: 'Cairo', sans-serif;
+    color: #234585;
+}
+
+#gridbotoes{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.botao{
+    height: 50px;
+    width: 50px;
+    border-radius:0 8px 0 8px;
+    margin: 15px auto 0 auto;
+    padding: 0;
+    background:rgba(159, 209, 243, 0.1);
+    border: 2px solid rgba(159, 209, 243, 0.5);
+    color: white;
+    cursor: pointer;
+}
+
+.botao::before{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    /*transform: translate(-30px,-15px);*/
+    border-right: 1px solid rgba(159, 209, 243, 0.7);
+    border-bottom: 1px solid rgba(159, 209, 243, 0.7);
+    border-radius:0 8px 0 8px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.botao:hover{
+    background:rgba(159, 209, 243, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    transition: 0.1s ease-in-out;
+}
+
+#igual{
+    background:rgba(230, 238, 243, 0.5);
+    color: #234585;
+}
+
+#igual:hover{
+    background:rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(159, 209, 243, 0.5);
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+#apagar{
+    background:rgba(78, 177, 238, 0.5);
+    color: #234585;
+}
+
+#apagar:hover{
+    background:rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(159, 209, 243, 0.5);
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+#apagartudo{
+    background:rgba(78, 177, 238, 0.5);
+    color: #234585;
+}
+
+#apagartudo:hover{
+    background:rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(159, 209, 243, 0.5);
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+#subtrair{
+    background:rgba(238, 78, 78, 0.5);
+    color: white;
+}
+
+#subtrair:hover{
+    background:rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(159, 209, 243, 0.5);
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+#somar{
+    background:rgba(238, 78, 78, 0.5);
+    color: white;
+}
+
+#somar:hover{
+    background:rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(159, 209, 243, 0.5);
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+#ponto{
+    background:rgba(238, 78, 78, 0.5);
+    color: white;
+}
+
+#ponto:hover{
+    background:rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(159, 209, 243, 0.5);
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+#multiplicar{
+    background:rgba(147, 78, 238, 0.5);
+    color: white;
+}
+
+#multiplicar:hover{
+    background:rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(159, 209, 243, 0.5);
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+#dividir{
+    background:rgba(147, 78, 238, 0.5);
+    color: white;
+}
+
+#dividir:hover{
+    background:rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(159, 209, 243, 0.5);
+    color: white;
+    transition: 0.1s ease-in-out;
+}
